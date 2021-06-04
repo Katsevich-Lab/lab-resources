@@ -1,0 +1,13 @@
+# local and remote paths to top-level data directories (note: more hierarchical structures are possible)
+LOCAL_DATA_DIR="/Volumes/tims_new_drive/research"
+REMOTE_DATA_DIR="Box:"
+
+# local paths to specific data directories
+LOCAL_GLMEIV_DATA_DIR=$LOCAL_DATA_DIR/"glmeiv/"
+LOCAL_GASPERINI_2019_DATA_DIR=$LOCAL_DATA_DIR/"gasperini-2019"
+LOCAL_XIE_2019_DATA_DIR=$LOCAL_DATA_DIR/"xie-2019"
+
+# remote paths to specific data directories
+REMOTE_GLMEIV_DATA_DIR=$REMOTE_DATA_DIR/"glmeiv/"
+REMOTE_GASPERINI_2019_DATA_DIR=$REMOTE_DATA_DIR/"gasperini-2019"
+REMOTE_XIE_2019_DATA_DIR=$REMOTE_DATA_DIR/"xie-2019"
