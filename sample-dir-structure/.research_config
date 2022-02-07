@@ -1,13 +1,29 @@
-# local and remote paths to top-level data directories (note: more hierarchical structures are possible)
-LOCAL_DATA_DIR="/Volumes/tims_new_drive/research/"
-REMOTE_DATA_DIR="Box:"
+# local and remote paths to top-level data directories 
+LOCAL_INTERNAL_DATA_DIR="/Users/ekatsevi/data/projects/"
+LOCAL_EXTERNAL_DATA_DIR="/Users/ekatsevi/data/external/"
+REMOTE_INTERNAL_DATA_DIR="ekatsevi@hpcc.wharton.upenn.edu:~/data/projects/"
+REMOTE_EXTERNAL_DATA_DIR="ekatsevi@hpcc.wharton.upenn.edu:~/data/external/"
 
-# local paths to specific data directories
-LOCAL_GLMEIV_DATA_DIR=$LOCAL_DATA_DIR"glmeiv/"
-LOCAL_GASPERINI_2019_DATA_DIR=$LOCAL_DATA_DIR"gasperini-2019/"
-LOCAL_XIE_2019_DATA_DIR=$LOCAL_DATA_DIR"xie-2019/"
+# local paths to project-specific data directories
+LOCAL_GLMEIV_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"glmeiv/"
+LOCAL_SCEPTRE_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"sceptre/"
+LOCAL_LOWMOI_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"lowmoi/"
+LOCAL_SYMCRT_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"symcrt/"
 
-# remote paths to specific data directories
-REMOTE_GLMEIV_DATA_DIR=$REMOTE_DATA_DIR"glmeiv/"
-REMOTE_GASPERINI_2019_DATA_DIR=$REMOTE_DATA_DIR"gasperini-2019/"
-REMOTE_XIE_2019_DATA_DIR=$REMOTE_DATA_DIR"xie-2019/"
+# local paths to external paper-specific data directories
+LOCAL_GASPERINI_2019_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"gasperini-2019/"
+LOCAL_XIE_2019_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"xie-2019/"
+LOCAL_SCHRAIVOGEL_2020_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"schraivogel-2020/"
+LOCAL_MORRIS_2021_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"morris-2021/"
+
+# remote paths to project-specific data directories
+REMOTE_GLMEIV_DATA_DIR=$REMOTE_INTERNAL_DATA_DIR"glmeiv/"
+REMOTE_SCEPTRE_DATA_DIR=$REMOTE_INTERNAL_DATA_DIR"sceptre/"
+REMOTE_LOWMOI_DATA_DIR=$REMOTE_INTERNAL_DATA_DIR"lowmoi/"
+REMOTE_SYMCRT_DATA_DIR=$REMOTE_INTERNAL_DATA_DIR"symcrt/"
+
+# remote paths to external paper-specific data directories
+REMOTE_GASPERINI_2019_DATA_DIR=$REMOTE_EXTERNAL_DATA_DIR"gasperini-2019/"
+REMOTE_XIE_2019_DATA_DIR=$REMOTE_EXTERNAL_DATA_DIR"xie-2019/"
+REMOTE_SCHRAIVOGEL_2020_DATA_DIR=$REMOTE_EXTERNAL_DATA_DIR"schraivogel-2020/"
+REMOTE_MORRIS_2021_DATA_DIR=$REMOTE_EXTERNAL_DATA_DIR"morris-2021/"
