@@ -1,0 +1,16 @@
+# local and remote paths to top-level data directories 
+LOCAL_INTERNAL_DATA_DIR="/home/stat/ekatsevi/data/projects/"
+LOCAL_EXTERNAL_DATA_DIR="/home/stat/ekatsevi/data/external/"
+
+# local paths to project-specific data directories
+LOCAL_GLMEIV_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"glmeiv/"
+LOCAL_SCEPTRE_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"sceptre/"
+LOCAL_LOWMOI_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"lowmoi/"
+LOCAL_SYMCRT_DATA_DIR=$LOCAL_INTERNAL_DATA_DIR"symcrt/"
+
+# local paths to external paper-specific data directories
+LOCAL_GASPERINI_2019_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"gasperini-2019/"
+LOCAL_XIE_2019_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"xie-2019/"
+LOCAL_SCHRAIVOGEL_2020_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"schraivogel-2020/"
+LOCAL_MORRIS_2021_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"morris-2021/"
+
