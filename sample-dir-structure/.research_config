@@ -1,3 +1,5 @@
+# Sample research configuration file for individual computers; trainees should substitute their own directory paths here.
+
 # local and remote paths to top-level data directories 
 LOCAL_INTERNAL_DATA_DIR="/Users/ekatsevi/data/projects/"
 LOCAL_EXTERNAL_DATA_DIR="/Users/ekatsevi/data/external/"
