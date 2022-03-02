@@ -1,11 +1,11 @@
-# Set up Terminal colors
+# Set up Terminal colors (optional)
 export CLICOLOR=1
 export LSCOLORS=GxBxCxDxexegedabagaced
 
-# Source research config file containing paths to data directories
+# Source research config file containing paths to data directories (mandatory)
 source ~/.research_config
 
-# Define hpcc function to pull/push from/to HPCC
+# Define hpcc function to pull/push from/to HPCC (mandatory)
 function hpcc() {
   COMMAND=$1
   NAME=$2
