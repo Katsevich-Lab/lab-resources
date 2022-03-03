@@ -1,23 +1,14 @@
-# Set up Terminal colors (optional)
-export CLICOLOR=1
-export LSCOLORS=GxBxCxDxexegedabagaced
+# .bash_profile
 
-# Source research config file containing paths to data directories (mandatory)
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
+
 source ~/.research_config
-
-# Define hpcc function to pull/push from/to HPCC (mandatory)
-function hpcc() {
-  COMMAND=$1
-  NAME=$2
-  OPTIONS=$3
-  LOCAL_DIR=$"LOCAL_"$NAME"_DATA_DIR"
-  REMOTE_DIR=$"REMOTE_"$NAME"_DATA_DIR"
-  if [ $COMMAND = "pull" ] 
-  then
-    rsync -rltvP ${!REMOTE_DIR} ${!LOCAL_DIR} $OPTIONS
-  fi
-  if [ $COMMAND = "push" ]
-  then
-    rsync -rltvP ${!LOCAL_DIR} ${!REMOTE_DIR} $OPTIONS
-  fi
-}
