@@ -1,0 +1,13 @@
+process {
+  executor = 'sge'
+  clusterOptions = '-o $HOME/output/\'$JOB_NAME-$JOB_ID.log\' -V'
+}
+executor {
+  cpus = 1
+  queueSize = 64
+  submitRateLimit = '1sec'
+}
+trace {
+  file = 'trace.txt'
+  fields = 'task_id,name,status,exit,time,realtime'
+}
