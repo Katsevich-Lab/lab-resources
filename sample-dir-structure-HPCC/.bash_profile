@@ -43,3 +43,4 @@ then
 	fi
     done
 fi
+cd ~
