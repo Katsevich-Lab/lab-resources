@@ -1,5 +1,3 @@
-# research configuration file for Wharton HPCC (should be the same for all trainees) 
-
 # local and remote paths to top-level data directories 
 LOCAL_INTERNAL_DATA_DIR="/home/stat/ekatsevi/data/projects/"
 LOCAL_EXTERNAL_DATA_DIR="/home/stat/ekatsevi/data/external/"
@@ -16,3 +14,8 @@ LOCAL_XIE_2019_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"xie-2019/"
 LOCAL_SCHRAIVOGEL_2020_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"schraivogel-2020/"
 LOCAL_MORRIS_2021_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"morris-2021/"
 
+# path to SIMULATR
+SIMULATR="/home/stat/ekatsevi/code/simulatr-command-line/run_simulation.sh"
+
+# path to code directory
+CODE_DIR="/home/stat/ekatsevi/code/"

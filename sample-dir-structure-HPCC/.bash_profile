@@ -26,7 +26,7 @@ then
     module load R/R-4.1.2
 
     # update all code and packages 
-    for dir in ~/code/*
+    for dir in $CODE_DIR*
     do
 	cd $dir
 	if [[ -e ".git" ]]; then
