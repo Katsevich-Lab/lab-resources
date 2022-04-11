@@ -44,5 +44,6 @@ then
   # go back to home
   cd ~
 else
+  echo "Logging onto a compute node..."
   qlogin -now no
 fi
