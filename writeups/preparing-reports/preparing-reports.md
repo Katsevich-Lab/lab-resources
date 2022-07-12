@@ -78,7 +78,7 @@ test_data %>% ggplot(aes(x = x, y = y)) + geom_point() + theme_bw()
 ```
 ````
 
-<img src="preparing-reports_files/figure-gfm/test-plot-abs-small-1.png" title="This plot's absolute size is too small." alt="This plot's absolute size is too small." width="40%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/test-plot-abs-small-1.png" title="This plot's absolute size is too small." alt="This plot's absolute size is too small." width="40%" style="display: block; margin: auto;" />
 
 ```` markdown
 ```{r test-plot-abs-medium, echo = FALSE, fig.cap = "This plot's absolute 
@@ -87,7 +87,7 @@ test_data %>% ggplot(aes(x = x, y = y)) + geom_point() + theme_bw()
 ```
 ````
 
-<img src="preparing-reports_files/figure-gfm/test-plot-abs-medium-1.png" title="This plot's absolute size is about right." alt="This plot's absolute size is about right." width="40%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/test-plot-abs-medium-1.png" title="This plot's absolute size is about right." alt="This plot's absolute size is about right." width="40%" style="display: block; margin: auto;" />
 
 ```` markdown
 ```{r test-plot-abs-large, echo = FALSE, fig.cap = "This plot's absolute 
@@ -96,7 +96,7 @@ test_data %>% ggplot(aes(x = x, y = y)) + geom_point() + theme_bw()
 ```
 ````
 
-<img src="preparing-reports_files/figure-gfm/test-plot-abs-large-1.png" title="This plot's absolute size is too large." alt="This plot's absolute size is too large." width="40%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/test-plot-abs-large-1.png" title="This plot's absolute size is too large." alt="This plot's absolute size is too large." width="40%" style="display: block; margin: auto;" />
 
 Among the three resulting figures, the small-sized plot is too cramped,
 the large-sized plot has axis titles and labels that are too small to
@@ -119,7 +119,7 @@ test_data %>% ggplot(aes(x = x, y = y)) + geom_point() + theme_bw()
 ```
 ````
 
-<img src="preparing-reports_files/figure-gfm/test-plot-rel-small-1.png" title="This plot's relative size is too small." alt="This plot's relative size is too small." width="10%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/test-plot-rel-small-1.png" title="This plot's relative size is too small." alt="This plot's relative size is too small." width="10%" style="display: block; margin: auto;" />
 
 ```` markdown
 ```{r test-plot-rel-medium, echo = FALSE, fig.cap = "This plot's relative
@@ -129,7 +129,7 @@ test_data %>% ggplot(aes(x = x, y = y)) + geom_point() + theme_bw()
 ```
 ````
 
-<img src="preparing-reports_files/figure-gfm/test-plot-rel-medium-1.png" title="This plot's relative size is about right." alt="This plot's relative size is about right." width="40%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/test-plot-rel-medium-1.png" title="This plot's relative size is about right." alt="This plot's relative size is about right." width="40%" style="display: block; margin: auto;" />
 
 ```` markdown
 ```{r test-plot-rel-large, echo = FALSE, fig.cap = "This plot's relative 
@@ -139,7 +139,7 @@ test_data %>% ggplot(aes(x = x, y = y)) + geom_point() + theme_bw()
 ```
 ````
 
-<img src="preparing-reports_files/figure-gfm/test-plot-rel-large-1.png" title="This plot's relative size is too large." alt="This plot's relative size is too large." width="80%" height="80%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/test-plot-rel-large-1.png" title="This plot's relative size is too large." alt="This plot's relative size is too large." width="80%" height="80%" style="display: block; margin: auto;" />
 
 ## Titles
 
@@ -156,7 +156,7 @@ mpg %>%
   theme_bw()
 ```
 
-<img src="preparing-reports_files/figure-gfm/cars-unlabeled-1.png" title="A plot without clear titles." alt="A plot without clear titles." style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/cars-unlabeled-1.png" title="A plot without clear titles." alt="A plot without clear titles." style="display: block; margin: auto;" />
 
 This is a plot of fuel efficiency versus engine displacement for various
 types of cars, but the axis and legend labels on the plot do not make
@@ -179,7 +179,7 @@ mpg %>%
   theme_bw()
 ```
 
-<img src="preparing-reports_files/figure-gfm/cars-labeled-1.png" title="(A plot with clear axis and legend titles). Fuel efficiency generally decreases with engine size; two-seaters (sports cars) are an exception because of their light weight." alt="(A plot with clear axis and legend titles). Fuel efficiency generally decreases with engine size; two-seaters (sports cars) are an exception because of their light weight." style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/cars-labeled-1.png" title="(A plot with clear axis and legend titles). Fuel efficiency generally decreases with engine size; two-seaters (sports cars) are an exception because of their light weight." alt="(A plot with clear axis and legend titles). Fuel efficiency generally decreases with engine size; two-seaters (sports cars) are an exception because of their light weight." style="display: block; margin: auto;" />
 Plots might or might not need overall titles; often the axis titles
 speak for themselves and the message of the plot can be conveyed in the
 caption) To add plot titles if necessary, use `ggtitle`. If applicable,
@@ -210,7 +210,7 @@ mpg %>%
   theme_bw()
 ```
 
-<img src="preparing-reports_files/figure-gfm/facet-wrap-1.png" title="An illustration of using $\texttt{facet\_wrap}$ to create a multi-panel plot." alt="An illustration of using $\texttt{facet\_wrap}$ to create a multi-panel plot." width="100%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/facet-wrap-1.png" title="An illustration of using $\texttt{facet\_wrap}$ to create a multi-panel plot." alt="An illustration of using $\texttt{facet\_wrap}$ to create a multi-panel plot." width="100%" style="display: block; margin: auto;" />
 
 If the plots convey different types of information, then they should be
 created separately and then concatenated together using the `plot_grid`
@@ -260,7 +260,7 @@ plot_grid(p1, p2,
           align = "h")         # how to align subplots
 ```
 
-<img src="preparing-reports_files/figure-gfm/cowplot-demo-1.png" title="(An illustration of using $\texttt{cowplot}$ to create a multi-panel plot.) Relationships between highway fuel economy and car type (left panel) and engine displacement (right panel)." alt="(An illustration of using $\texttt{cowplot}$ to create a multi-panel plot.) Relationships between highway fuel economy and car type (left panel) and engine displacement (right panel)." width="100%" style="display: block; margin: auto;" />
+<img src="https://github.com/Katsevich-Lab/lab-resources/blob/main/writeups/preparing-reports/preparing-reports_files/figure-gfm/cowplot-demo-1.png" title="(An illustration of using $\texttt{cowplot}$ to create a multi-panel plot.) Relationships between highway fuel economy and car type (left panel) and engine displacement (right panel)." alt="(An illustration of using $\texttt{cowplot}$ to create a multi-panel plot.) Relationships between highway fuel economy and car type (left panel) and engine displacement (right panel)." width="100%" style="display: block; margin: auto;" />
 
 # Tables
 
