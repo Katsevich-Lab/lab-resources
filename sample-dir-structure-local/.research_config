@@ -31,4 +31,4 @@ REMOTE_MORRIS_2021_DATA_DIR=$REMOTE_EXTERNAL_DATA_DIR"morris-2021/"
 REMOTE_PAPALEXI_2021_DATA_DIR=$REMOTE_EXTERNAL_DATA_DIR"papalexi-2021/"
 
 # code directory
-CODE_DIR="/Users/ekatsevi/code/research/"
+LOCAL_CODE_DIR="/Users/ekatsevi/code/research/"
