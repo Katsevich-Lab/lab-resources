@@ -23,20 +23,29 @@ function hpcc() {
 }
 
 # update all code and packages
-for dir in $CODE_DIR*/
-do
-	cd $dir
-	if [[ -e ".git" ]]; then
-	    # If git repo, then pull. Print informative message.
-	    status=$(git pull)
-	    if [[ $status == "Already up-to-date." || $status == "Already up to date." ]]; then
-		    echo "$dir is up to date."
-	    else
-    		echo "Updating $dir."
-    		if [[ -e "DESCRIPTION" ]]; then
-    		    Rscript -e "devtools::install()"
-        fi
-	    fi
-	fi
-done
-cd ~
+function update_repos() {
+  orig_dir=$(pwd)
+  for dir in $LOCAL_CODE_DIR*
+	do
+	  cd $dir
+	  echo "Updating "$(basename $dir)"..."
+    if [[ -e ".git" ]]; then
+      # determine whether the working directory is clean
+      [ $(echo $(git status) | grep "working tree clean" | wc -c) != 0 ] ; is_clean=$?
+      # if working directory is not clean, then commit existing changes
+      if [[ ! $is_clean ]]; then
+        git add --all
+        git commit -m "Committing changes before pulling"
+      fi
+  		status=$(git pull)
+  		if [[ $status != "Already up-to-date." && $status != "Already up to date." ]]; then
+  		  if [[ -e "DESCRIPTION" ]]; then
+  		    Rscript -e "devtools::install(build = FALSE, upgrade = 'never')"
+  		  fi
+  		fi
+    fi
+	done
+
+	# go back to original directory
+	cd $orig_dir
+}
