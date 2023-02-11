@@ -14,8 +14,5 @@ LOCAL_XIE_2019_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"xie-2019/"
 LOCAL_SCHRAIVOGEL_2020_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"schraivogel-2020/"
 LOCAL_MORRIS_2021_DATA_DIR=$LOCAL_EXTERNAL_DATA_DIR"morris-2021/"
 
-# path to SIMULATR
-SIMULATR="/home/stat/ekatsevi/code/simulatr-command-line/run_simulation.sh"
-
 # path to code directory
-CODE_DIR="/home/stat/ekatsevi/code/"
+LOCAL_CODE_DIR="/home/stat/ekatsevi/code/"
