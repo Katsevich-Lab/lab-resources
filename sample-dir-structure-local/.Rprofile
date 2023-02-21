@@ -1,5 +1,6 @@
 if (interactive()) {
   suppressMessages(require(devtools))
+  suppressMessages(require(conflicted))
 }
 .get_config_path <- function(dir_name) {
   cmd <- paste0("source ~/.research_config; echo $", dir_name)
