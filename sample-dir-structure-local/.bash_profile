@@ -9,16 +9,16 @@ source ~/.research_config
 function hpcc() {
   COMMAND=$1
   NAME=$2
-  OPTIONS=$3
+  SUBDIR=$3
   LOCAL_DIR=$"LOCAL_"$NAME"_DATA_DIR"
   REMOTE_DIR=$"REMOTE_"$NAME"_DATA_DIR"
   if [ $COMMAND = "pull" ]
   then
-    rsync -rltvP ${!REMOTE_DIR} ${!LOCAL_DIR} $OPTIONS
+    rsync -rltvP ${!REMOTE_DIR}/$SUBDIR/ ${!LOCAL_DIR}/$SUBDIR/
   fi
   if [ $COMMAND = "push" ]
   then
-    rsync -rltvP ${!LOCAL_DIR} ${!REMOTE_DIR} $OPTIONS
+    rsync -rltvP ${!LOCAL_DIR}/$SUBDIR/ ${!REMOTE_DIR}/$SUBDIR/
   fi
 }
 
